@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Gallery</title>
+</head>
+<nav>
+    <a href="#" class="logo">
+        <picture>
+            <!-- SVG version for all scenarios due to scalability and efficiency -->
+            <source srcset="../assets/logo/ECO_logo.svg" type="image/svg+xml" />
+            <!-- High resolution PNG for large screens -->
+            <source srcset="../assets/logo/ECO_logo_big.png" media="(min-width: 1024px)" type="image/png" />
+            <!-- Small PNG for medium screens -->
+            <source srcset="../assets/logo/ECO_logo_small.png" media="(min-width: 768px)" type="image/png" />
+            <!-- High resolution JPG for small screens (lower priority than PNG) -->
+            <source srcset="../assets/logo/ECO_logo_big.jpg" media="(min-width: 480px)" type="image/jpg" />
+            <!-- Fallback small JPG for all other scenarios or if none of the above are supported -->
+            <img src="../assets/logo/ECO_logo_small.jpg" alt="ECO company logo">
+        </picture>
+    </a>
+    <ul>
+        <li><a href="../index.html" aria-label="Go to main page">Home</a></li>
+        <li><a href="./about.html" aria-label="Go to about page">About</a></li>
+        <li><a href="./services.html" aria-label="Go to services page">Services</a></li>
+        <li><a href="#" id="current-page" aria-label="Go to services page">Gallery</a></li>
+        <li id="last-item"><a href="./contact.html" aria-label="Go to contact page">Contact</a></li>
+    </ul>
+</nav>
+<header>
+    <h1 style="text-align: center;">Gallery</h1>
+</header>
+<body>
+    <main> 
+    <aside>
+        <ul>
+            <li class="smallbox">Let's</li>
+            <li class="smallbox">Try</li>
+            <li class="smallbox">To</li>
+            <li class="smallbox">Make</li>
+            <li class="smallbox">FlexBox</li>
+        </ul>
+    </aside>  
+
+    <div class="cats">  
+        <div class="cat1">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat2">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat3">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat4">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat5">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat6">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat7">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+        <div class="cat8">
+            <img src="../assets/pic/maine-coon-kittens.png" alt="black and white kittens">
+        </div>
+    </div>  
+    </main>
+    
+
+    <footer>
+        <ul>
+            <li><a href="" aria-label="Go to FAQ page">FAQ</a></li>
+            <li><a href="" aria-label="Go to Terms page">Terms</a></li>
+            <li><a href="" aria-label="Go to Privacy page">Privacy</a></li>
+            <li id="last-item"><a href="" aria-label="Go to Cookies page">Cookies</a></li>
+        </ul>
+        <div class="line"></div>
+        <p>&copy; 2024 My Webpage</p>
+    </footer>
+</body>
+</html>

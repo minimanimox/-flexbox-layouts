@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    max-height: 48px;
+    background-color: white;
+    display: flex;
+}
+
+nav ul,
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+#last-item {
+    margin-right: 0px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: rgb(160, 225, 243);
+}
+
+nav ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+#current-page {
+    color: aquamarine;
+}
+
+.logo {
+    display: flex;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vb;
+}
+
+article {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    vertical-align: top;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:#fff;
+    text-align: center;
+    font-size: initial; /* font-size re-setting */
+    justify-content: center;
+    align-items: flex-start; /* aside on left side */
+}
+
+td h2 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+footer {
+    padding: 10px 10px;
+    background: #1f1f1f;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer ul {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer p {
+    color: #fff;
+    display: block;
+}
+
+footer .line {
+    border-top: 1px solid #ccc;
+    width: 80%; /* 선의 길이를 50%로 설정 */
+    margin: 20px auto; /* 가운데 정렬 */
+}
+
+ul li a:link,
+ul li a:visited {
+    color: rgb(160, 225, 243);
+}
+
+ul li a:hover {
+    color: rgb(229, 145, 0);
+}
+
+ul li a:active {
+    color: rgb(92, 229, 0);
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 10px;
+    left: calc(100% - 40px); /* button position */
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    border-color: rgba(85, 85, 85, 0.2);
+    background-color: rgb(100, 100, 100);
+    padding: .5px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #7dbbf1;
+}
+
+.textbox {
+    border: 2px solid red;
+    margin: 20px;
+    padding: 20px; /* 내부 여백 추가 */
+}
+
+.left-pic {
+    border: 2px solid black;
+    float: left;
+    margin-left: 40px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.right-pic {
+    border: 2px solid black;
+    float: right;
+    margin-left: 20px; 
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-right: 40px; 
+    padding: 20px;
+}
+
+.hamsters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1030px; /* 원하는 너비로 조정 */
+    height: 860px; /* 원하는 높이로 조정 */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: rgb(244, 244, 169);
+}
+
+.item, .cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin: 10px;
+    background: white;
+}
+
+.first-pic, .second-pic {
+    width: 500px;
+    height: 400px; /* 아이템의 높이를 50%로 설정 */
+}
+
+.third-pic {
+    width: 100%; /* 마지막 아이템을 전체 너비로 설정 */
+    height: 50%; /* 아이템의 높이를 50%로 설정 */
+}
+
+/* 아이템의 여백과 패딩을 조정하여 레이아웃 조정 */
+.first-pic, .second-pic, .third-pic {
+    padding: 20px;
+}
+
+.first-pic {
+    margin-right: auto; /* 첫 번째 아이템의 오른쪽 여백을 자동으로 설정 */
+}
+
+.second-pic {
+    margin-left: auto; /* 두 번째 아이템의 왼쪽 여백을 자동으로 설정 */
+}
+
+.third-pic {
+    margin-top: auto; /* 세 번째 아이템의 위쪽 여백을 자동으로 설정 */
+}
+
+.third-pic img {
+    width: 400px;
+}
+
+aside {
+    display: flex;
+    flex: 0 0 250px; /* 고정 너비를 원할 경우 */
+    height: 500px;
+    margin-right: 20px;
+    background: #85bdf8;
+    padding: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.smallbox {
+    border: 1px solid white;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    text-align: center;
+    display: flex; /* flexbox로 설정 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.cats {
+    display: flex;
+    flex-wrap: wrap; /* 줄을 넘기면 다음 줄로 가도록 설정 */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 0;
+}
+
+.cats img {
+    width: 230px;
+    height: 210px;
+}
+
+.cat1, .cat2, .cat3, .cat4, .cat5, .cat6, .cat7, .cat8 {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
